@@ -7,7 +7,7 @@
     "test": "grunt test",
     "watch": "watchify lib/main.jsx -o lib/dev.js -t reactify",
     "server": "python -m SimpleHTTPServer",
-    "dev": "npm run watch & npm run server",
+    "dev": "npm run watch | npm run server",
     "build": "browserify lib/component.jsx -o ./index.js -t reactify",
     "postinstall": "npm run build"
   },
