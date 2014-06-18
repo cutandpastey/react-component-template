@@ -1,4 +1,5 @@
 lib/dev.js
+lib/.dev.js
 node_modules/*
 *.log
 .idea/*
