@@ -1,0 +1,3 @@
+lib/dev.js
+node_modules/*
+*.log
