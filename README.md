@@ -21,6 +21,8 @@ git push origin master
 ##### To run the dev server (you need python):
 
 ```
+npm install
+
 npm run dev
 ```
 
