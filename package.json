@@ -1,0 +1,24 @@
+{
+  "name": "react-component-template",
+  "version": "0.0.0",
+  "description": "A template project for creating distributable reactjs components",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test",
+    "watch": "watchify lib/main.jsx -o lib/dev.js -t reactify",
+    "server": "python -m SimpleHTTPServer",
+    "dev": "npm run watch & npm run server",
+    "build": "browserify lib/component.jsx -o ./index.js -t reactify",
+    "postinstall": "npm run build"
+  },
+  "private": true,
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^4.1.10",
+    "envify": "^1.2.1",
+    "react": "^0.10.0",
+    "reactify": "^0.13.1",
+    "watchify": "^0.10.2"
+  }
+}
